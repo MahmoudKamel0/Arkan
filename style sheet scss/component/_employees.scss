@@ -1,0 +1,25 @@
+#employees {
+       padding-top: 176px;
+       padding-bottom: 95px;
+       background: url("../images/employees/background-employees.webp") center/cover no-repeat;
+
+       .slider {
+              img {
+                     height: 182px;
+                     width: 182px;
+                     border-radius: 50%;
+                     overflow: hidden;
+
+                     // prefix
+                     -webkit-border-radius: 50%;
+                     -moz-border-radius: 50%;
+                     -ms-border-radius: 50%;
+                     -o-border-radius: 50%;
+              }
+
+              .item strong {
+                     display: inline-block;
+
+              }
+       }
+}

@@ -1,0 +1,135 @@
+header {
+       %font-style {
+              font-family: var(--main-font);
+       }
+       color: var(--white-color);
+
+       
+       .navigation, .content {
+              padding: 56px 49px;
+
+              @media screen and (max-width: 768px) {
+                     padding: 56px 15px;                     
+              }
+       }
+
+       .navigation {
+              transition: transform var(--transition);
+
+              //prefixes transition                            
+              -webkit-transition: transform var(--transition);
+              -moz-transition: transform var(--transition);
+              -ms-transition: transform var(--transition);
+              -o-transition: transform var(--transition);
+
+              &.active {
+                     height: 80px;
+                     width: 100%; 
+                     position: fixed;
+                     top: 0;
+                     right: 0;
+                     z-index: 20;
+                     background: rgba(var(--main-color), 0.90);
+                     backdrop-filter: blur(15px);
+              }
+
+
+              .logo {
+                     border-inline-end: 1px solid var(--white-color);
+                     padding-inline-end: 20px;
+              }
+
+              ul li a {
+                     position: relative;
+                     transition: color var(--transition);
+                     @extend %font-style;
+
+                     //prefixes for transition;
+                     -moz-transition: color var(--transition);
+                     -ms-transition: color var(--transition);
+                     -o-transition: color var(--transition);
+                     -webkit-transition: color var(--transition);
+              }
+
+              ul li a::before, ul li a::after {
+                     content: "";
+                     position: absolute;
+                     width: 0%;
+                     height: 2px;
+                     border-radius: 100px;
+                     background: var(--primary-color);
+                     transition: all 0.3s ease-in-out;
+
+                     // prefixes for border-radius
+                     -webkit-border-radius: 100px;
+                     -moz-border-radius: 100px;
+                     -ms-border-radius: 100px;
+                     -o-border-radius: 100px;
+              }
+
+              ul li a::before {
+                     top: -7px;
+                     left: 0;
+              }
+
+              ul li a::after {
+                     bottom: -7px;
+                     right: 0;
+              }
+
+              ul li a:hover {
+                     color: var(--primary-color);
+              }
+
+              ul li a:hover::before,
+              ul li a:hover::after {
+                     width: 50%;
+              }
+
+              .contact-us a{
+                     margin-inline-end: 10px;
+                     @extend %font-style;
+              }
+
+              .contact-us a strong{
+                     margin-inline-end: 10px;
+                     @extend %font-style;
+              }
+
+              @media screen and (max-width: 1270px) {
+                     .logo {
+                            border-inline-end: none;
+                            padding-inline-end: 0px;
+                     }
+
+                     .nav-contact {
+                            height: 100vh;
+                            width: 60vmin;
+                            padding-block: 50px;
+                            flex-direction: column;
+                            position: fixed;
+                            top: 0px;
+                            right: -100vmin;
+                            background: rgba(var(--main-color), 0.979);
+                            transition: right var(--transition);
+
+                            //prefix transition
+                            -moz-transition: right var(--transition);
+                            -ms-transition: right var(--transition);
+                            -o-transition: right var(--transition);
+                            -webkit-transition: right var(--transition);
+                     }
+                     .nav-contact.active {
+                            right: 0;
+                     }
+                     .nav-links, .contact-us {
+                            flex-direction: column;
+                     }
+
+                     .btn-menu {
+                            display: block;
+                     }
+              }    
+
+       }
+}

@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "sass": "npx sass --watch \"style sheet scss/style.scss\" \"style sheet css/style.css\" --style compressed",
+    "tailwindcss": "npx @tailwindcss/cli -i \"./style sheet scss/tailwindcss.css\" -o \"style sheet css/tailwindcss.css\" --watch --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "@types/jquery": "^3.5.32",
+    "sass": "^1.89.0",
+    "tailwindcss": "^4.1.7"
+  }
+}

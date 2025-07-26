@@ -1,0 +1,24 @@
+@use "./fonts/fonts";
+@use "../component/main-format";
+@use "../component/loading";
+@use "../component/global-style";
+@use "../component/article-style";
+@use "./icons/icons";
+@use "../component/header";
+
+
+header {
+       background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Football-player-image-rights-protection.webp") no-repeat top/cover;
+}
+
+.nesting-list-h4 {
+       strong, li {
+              font-size: var(--sm-font-size);
+       }
+}
+
+@supports (background-image: url("../../images/articles/Football-player-image-rights-protection.webp")) {
+       header {
+              background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Football-player-image-rights-protection.webp") no-repeat top/cover;
+       }
+}

@@ -1,0 +1,67 @@
+#services {
+       min-height: 100vh;
+       background: linear-gradient(rgba(var(--main-color), 0.30) 100%, rgba(var(--main-color), 0.80)), url("../images/section-bg/services.webp") center/cover no-repeat;
+       color: var(--white-color);
+       padding-block: 50px;
+
+       h2 {
+              width: fit-content;
+              margin-top: 20px;
+              position: relative;
+       }
+
+       h2::before, h2::after {
+              content: "";
+              position: absolute;
+              height: 30px;
+              width: 100%;
+              right: 0;
+       }
+
+       h2::before {
+              top: -30px;
+              background: url("../images/vectors/border-top-services.svg") center/cover no-repeat;
+       }
+
+       h2::after {
+              bottom: -30px;
+              background: url("../images/vectors/border-bottom-services.svg") center/cover no-repeat;;
+       }
+
+       .items  {
+              margin-top: 85px;
+              gap: 20px;
+       }
+
+       .items .item {
+              padding: 43px 34px;
+              flex: 1;
+              background: rgb(var(--main-color), 0.60);
+              backdrop-filter: blur(15px);
+
+              h3 {
+                     font-size: var(--sm2-font-size);
+              }
+
+              p {
+                     margin-top: 35px;
+                     font-size: 1.5rem;
+              }
+       }
+
+       .signature {
+              right: 63px;
+              bottom: 10px;
+              font-family: var(--secondary-font);
+              font-size: var(--md-font-size);
+              color: var(--white-color);
+       }
+}
+
+
+
+@supports (background-image: url("../images/section-bg/services.webp")) {
+       #contact {
+              background: linear-gradient(rgba(0, 0, 0, 0.70) 100%, rgba(0, 0, 0, 0.80)), url("../images/section-bg/services.webp") center/cover no-repeat;
+       }
+}

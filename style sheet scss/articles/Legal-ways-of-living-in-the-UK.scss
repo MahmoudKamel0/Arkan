@@ -1,0 +1,18 @@
+@use "./fonts/fonts";
+@use "../component/main-format";
+@use "../component/loading";
+@use "../component/global-style";
+@use "../component/article-style";
+@use "./icons/icons";
+@use "../component/header";
+
+
+header {
+       background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Legal-ways-of-living-in-the-UK.webp") no-repeat top/cover;
+}
+
+@supports (background-image: url("../../images/articles/Legal-ways-of-living-in-the-UK.webp")) {
+       header {
+              background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Legal-ways-of-living-in-the-UK.webp") no-repeat top/cover;
+       }
+}

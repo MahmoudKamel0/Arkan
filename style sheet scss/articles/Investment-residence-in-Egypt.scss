@@ -1,0 +1,22 @@
+@use "./fonts/fonts";
+@use "../component/main-format";
+@use "../component/loading";
+@use "../component/global-style";
+@use "../component/article-style";
+@use "./icons/icons";
+@use "../component/header";
+
+
+header {
+       background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Investment-residence-in-Egypt.webp") no-repeat top/cover;
+}
+
+article > ol:first-of-type > li {
+       margin-top: 25px;
+}
+
+@supports (background-image: url("../../images/articles/Investment-residence-in-Egypt.webp")) {
+       header {
+              background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Investment-residence-in-Egypt.webp") no-repeat top/cover;
+       }
+}

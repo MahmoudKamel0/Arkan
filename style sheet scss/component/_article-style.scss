@@ -1,0 +1,147 @@
+h2 {
+       margin: 60px 0 20px;
+       font-size: var(--md-font-size);
+       font-weight: bold;
+}
+
+p, li {
+       font-size: var(--sm2-font-size);
+}
+
+header {
+       height: 500px;
+
+       .content {
+              height: 350px;
+
+              h1 {
+                     font-size: var(--lg-font-size);
+              }
+       }
+
+       @media screen and (max-width: 1270px) {
+              .logo {
+                     border-inline-end: none;
+                     padding-inline-end: 0px;
+              }
+
+              .nav-contact {
+                     height: 100vh;
+                     width: 60vmin;
+                     padding-block: 50px;
+                     flex-direction: column;
+                     position: fixed;
+                     top: 0px;
+                     right: -100vmin;
+                     background: rgba(0, 0, 0, 0.979);
+                     transition: right var(--transition);
+
+                     //prefix transition
+                     -moz-transition: right var(--transition);
+                     -ms-transition: right var(--transition);
+                     -o-transition: right var(--transition);
+                     -webkit-transition: right var(--transition);
+              }
+              .nav-contact.active {
+                     right: 0;
+              }
+              .nav-links, .contact-us {
+                     flex-direction: column;
+              }
+
+              .btn-menu {
+                     display: block;
+              }
+       }    
+}
+
+main {
+       padding-bottom: 40px;
+}
+
+article {
+       padding: 56px 49px;
+       @media screen and (max-width: 768px) {
+              padding: 56px 15px;                     
+       }
+
+       ul, ol {
+              margin-block: 5px;
+              padding-inline-start: 50px;
+
+              li {
+                     margin-top: 10px;
+              }
+
+              @media screen and (max-width: 768px) {
+                     padding-inline-start: 30px;
+              }
+       }
+
+       ul {
+              list-style: circle;
+       }
+
+       ol {
+              list-style: decimal;
+       }
+
+       a, strong {
+              font-size: var(--sm2-font-size);
+       }
+
+       a {
+              color: blueviolet;
+       }
+
+       h3 {
+              margin-top: 15px;
+              font-size: var(--sm2-font-size);
+       }
+}      
+
+.signature {
+       font-family: var(--secondary-font);
+       font-size: 3.5rem;
+}
+
+div.icon-whatsapp {
+       background: url("../../images/vectors/btn-whatsapp.jpg") center/cover;
+}
+
+footer {
+       min-height: 500px;
+       color: var(--white-color);
+       background: linear-gradient(rgb(0, 0, 0, 0.80) 100%, #000), url("../../images/section-bg/footer.png") center/cover no-repeat fixed;
+
+       h3 {
+              font-size: var(--sm2-font-size);
+       }
+
+       .item strong {
+              font-size: 1.8rem;
+       }
+
+
+       p, .bottom-part strong {
+              font-size: var(--sm-font-size);
+       }
+
+       .bottom-part {
+              display: inline-block;
+              border-top: 1px solid var(--white-color);
+       }
+
+       @media screen and (max-width: 1270px) {
+              > div:first-of-type {
+                     flex-direction: column;
+              }
+       }
+}
+
+@supports (background-image: url("../../images/section-bg/footer.png")) {
+       footer {
+              background: linear-gradient(rgb(0, 0, 0, 0.80) 100%, #000), url("../../images/section-bg/footer.png") center/cover no-repeat;
+       }
+}
+

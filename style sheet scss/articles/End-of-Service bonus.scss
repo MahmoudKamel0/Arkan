@@ -1,0 +1,17 @@
+@use "./fonts/fonts";
+@use "../component/loading";
+@use "../component/main-format";
+@use "../component/global-style";
+@use "../component/article-style";
+@use "./icons/icons";
+@use "../component/header";
+
+header {
+       background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/End-of-Service bonus.webp") no-repeat top/cover;
+}
+
+@supports (background-image: url("../../images/articles/End-of-Service bonus.webp")) {
+       header {
+              background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/End-of-Service bonus.webp") no-repeat top/cover;
+       }
+}

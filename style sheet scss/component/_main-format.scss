@@ -1,0 +1,22 @@
+:root {
+       --transition      : 0.5s ease-out;
+       --main-font       : 'Cairo', sans-serif;
+       --secondary-font  : 'BShekari', sans-serif;
+       --normal-font     : 'Arial', sans-serif;
+       --lg-font-size    : clamp(1.4rem, 0.9034rem + 2.4828vw, 2.3rem);
+       --md-font-size    : clamp(1.3rem, 0.9034rem + 2.4828vw, 2rem);
+       --sm-font-size    : clamp(1.2rem, 1.0345rem + 0.8276vw, 1.5rem);
+       --sm2-font-size   : clamp(1.2rem, 1.0345rem + 0.8276vw, 1.7rem);
+       --sm3-font-size   : clamp(1.1rem, 1.0345rem + 0.8276vw, 1.3rem);
+       font-size         : 10px;
+       
+       --primary-color   : #FFD700;
+       --main-color      : 0, 48, 73;
+       --white-color     : #ffffff;
+
+       scroll-behavior: smooth;
+
+} body * {
+       font-family: var(--normal-font);
+       font-size: 1.2rem;
+}

@@ -1,0 +1,74 @@
+#contact {
+       min-height: 132vh;
+       background: linear-gradient(rgb(var(--main-color), 0.70),var(--main-color)),url("../images/section-bg/bg-contact.webp") center/cover no-repeat;
+
+       form {
+              color: var(--white-color);
+              height: auto;
+
+              &::before, &::after {
+                     content: "";
+                     height: 34.34px;
+                     width: 100%;
+                     position: absolute;
+              }
+
+              &::before {
+                     top: -52px;
+                     right: 0;
+                     background: url("../images/vectors/border-top-contact.svg") center no-repeat;
+              }
+
+              &::after {
+                     bottom: -52px;
+                     right: 0;
+                     background: url("../images/vectors/border-bottom-contact.svg") center/contain no-repeat;
+              }
+
+              input, textarea {
+                     width: 100%;
+                     font-family: var(--main-font);
+                     padding: 15px;
+                     caret-color: var(--primary-color);
+                     border: 1px solid var(--primary-color);
+                     background: rgb(0, 0, 0, 0.50);
+              }
+
+              input {
+                     height: 60px;
+              }
+
+              textarea {
+                     min-height: 150px;
+                     max-height: 170px;
+              }
+              
+              button, button#submitBtn {
+                     width: 100%;
+                     font-family: var(--main-font);
+                     font-weight: bold;
+                     background: rgb(var(--main-color), 0.90);
+                     padding-block: 20px;
+              }
+       }
+
+       .photo {
+              height: 100%;
+              width: 50vw;
+
+              img {
+                     position: absolute;
+                     width: 28vw;
+                     object-fit: cover;
+                     right: 70px;
+                     bottom: 0;
+                     z-index: 5;
+              }
+       }
+}
+
+@supports (background-image: url("../images/section-bg/bg-contact.webp")) {
+       #contact {
+              background: linear-gradient(rgb(var(--main-color), 0.50) 100%,#000),url("../images/section-bg/bg-contact.webp") center/cover no-repeat;
+       }
+}
