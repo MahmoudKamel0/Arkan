@@ -15,6 +15,7 @@ header {
               height: 350px;
 
               h1 {
+                     margin-top: 233px;
                      font-size: var(--lg-font-size);
               }
        }
@@ -33,7 +34,7 @@ header {
                      position: fixed;
                      top: 0px;
                      right: -100vmin;
-                     background: rgba(0, 0, 0, 0.979);
+                     background: rgba(var(--main-color), 0.979);
                      transition: right var(--transition);
 
                      //prefix transition
@@ -112,7 +113,7 @@ div.icon-whatsapp {
 footer {
        min-height: 500px;
        color: var(--white-color);
-       background: linear-gradient(rgb(0, 0, 0, 0.80) 100%, #000), url("../../images/section-bg/footer.png") center/cover no-repeat fixed;
+       background: linear-gradient(rgb(var(--main-color), 0.80) 100%, #000), url("../../images/section-bg/footer.png") center/cover no-repeat fixed;
 
        h3 {
               font-size: var(--sm2-font-size);
@@ -139,9 +140,15 @@ footer {
        }
 }
 
+
+// style when production feature font-size-controller
+.font-size-controller :is(div, span):not(:last-of-type):not(:nth-of-type(4)) {
+       display: none;
+}
+
 @supports (background-image: url("../../images/section-bg/footer.png")) {
        footer {
-              background: linear-gradient(rgb(0, 0, 0, 0.80) 100%, #000), url("../../images/section-bg/footer.png") center/cover no-repeat;
+              background: linear-gradient(rgb(var(--main-color), 0.80) 100%, #000), url("../../images/section-bg/footer.png") center/cover no-repeat;
        }
 }
 

@@ -7,11 +7,11 @@
 @use "../component/header";
 
 header {
-       background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/The-most-important-grounds-for-cassation-appeal-of-judicial-decisions.webp") no-repeat top/cover;
+       background: linear-gradient(rgba(var(--main-color), 0.40) 100%, #000), url("../../images/articles/The-most-important-grounds-for-cassation-appeal-of-judicial-decisions.webp") no-repeat top/cover;
 }
 
 @supports (background-image: url("../../images/articles/The-most-important-grounds-for-cassation-appeal-of-judicial-decisions.webp")) {
        header {
-              background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/The-most-important-grounds-for-cassation-appeal-of-judicial-decisions.webp") no-repeat top/cover;
+              background: linear-gradient(rgba(var(--main-color), 0.40) 100%, #000), url("../../images/articles/The-most-important-grounds-for-cassation-appeal-of-judicial-decisions.webp") no-repeat top/cover;
        }
 }

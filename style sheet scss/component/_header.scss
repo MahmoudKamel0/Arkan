@@ -41,6 +41,7 @@ header {
 
               ul li a {
                      position: relative;
+                     font-size: 1.4rem;
                      transition: color var(--transition);
                      @extend %font-style;
 
@@ -86,12 +87,13 @@ header {
                      width: 50%;
               }
 
-              .contact-us a{
+              .contact-us a {
+                     font-size: 1.4rem;
                      margin-inline-end: 10px;
                      @extend %font-style;
               }
 
-              .contact-us a strong{
+              .contact-us a strong {
                      margin-inline-end: 10px;
                      @extend %font-style;
               }

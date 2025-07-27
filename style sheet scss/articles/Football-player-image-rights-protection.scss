@@ -8,7 +8,7 @@
 
 
 header {
-       background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Football-player-image-rights-protection.webp") no-repeat top/cover;
+       background: linear-gradient(rgba(var(--main-color), 0.40) 100%, #000), url("../../images/articles/Football-player-image-rights-protection.webp") no-repeat top/cover;
 }
 
 .nesting-list-h4 {
@@ -19,6 +19,6 @@ header {
 
 @supports (background-image: url("../../images/articles/Football-player-image-rights-protection.webp")) {
        header {
-              background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/Football-player-image-rights-protection.webp") no-repeat top/cover;
+              background: linear-gradient(rgba(var(--main-color), 0.40) 100%, #000), url("../../images/articles/Football-player-image-rights-protection.webp") no-repeat top/cover;
        }
 }

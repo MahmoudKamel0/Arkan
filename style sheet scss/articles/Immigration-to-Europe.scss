@@ -7,12 +7,12 @@
 @use "../component/header";
 
 header {
-       background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/How-to-immigrate-to-Europe-legally.webp") no-repeat top/cover;
+       background: linear-gradient(rgba(var(--main-color), 0.40) 100%, #000), url("../../images/articles/How-to-immigrate-to-Europe-legally.webp") no-repeat top/cover;
 }
 
 
 @supports (background-image: url("../../images/articles/How-to-immigrate-to-Europe-legally.webp")) {
        header {
-              background: linear-gradient(rgba(0, 0, 0, 0.40) 100%, #000), url("../../images/articles/How-to-immigrate-to-Europe-legally.webp") no-repeat top/cover;
+              background: linear-gradient(rgba(var(--main-color), 0.40) 100%, #000), url("../../images/articles/How-to-immigrate-to-Europe-legally.webp") no-repeat top/cover;
        }
 }

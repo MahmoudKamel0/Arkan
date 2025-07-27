@@ -14,7 +14,7 @@
 
 header {
        min-height: 812px;
-       background: url("../images/hero.webp") no-repeat top/cover;
+       background: url("../images/section-bg/hero.webp") no-repeat top/cover;
 
        .container-top {
               min-height: 100vh;
@@ -56,8 +56,8 @@ header {
 
               h1 + p {
                      margin-block-start: 5px;
-                     font-size: var(--sm-font-size);
-                     font-weight: 300;
+                     font-size: var(--lg-font-size);
+                     font-weight: bold;
                      line-height: 28px;
                      max-width: 729px;
                      text-align: center;
